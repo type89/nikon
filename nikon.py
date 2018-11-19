@@ -9,6 +9,6 @@ for i in range (3):
     strdate = str(now.date()) + "_" + str(now.time())
     filename = "D40_" + strdate + ".jpg"
 
-    cmd ="gphoto2 --capture-image-and-download --filename " + folder + filename
+    cmd ="gphoto2 --capture-image-and-download --filename " + foldername + filename
     subprocess.call(cmd.split())
     time.sleep(5)
